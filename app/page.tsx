@@ -6,6 +6,7 @@ import catWatches from '../public/images/home/cat-watches.jpg'
 import catGuay from '../public/images/home/cat-guaya.jpg'
 import catJewelry from '../public/images/home/cat-jewels.jpg'
 import catDress from '../public/images/home/cat-fashion.jpg'
+import guayaPic from '../public/images/home/guayabera-main.jpg'
 
 export default function Home() {
   return (
@@ -172,7 +173,7 @@ export default function Home() {
           <div className="relative overflow-hidden group md:order-2">
             <div className="absolute inset-3 border border-[#C9A96E]/20 z-10 pointer-events-none transition-all duration-400 group-hover:inset-2" />
             <Image
-              src={catGuay}
+              src={guayaPic}
               alt="Guayaberas"
               className="w-full aspect-4/5 object-cover filter-[sepia(15%)_contrast(1.1)] transition-transform duration-700 ease-out group-hover:scale-[1.04]"
             />
