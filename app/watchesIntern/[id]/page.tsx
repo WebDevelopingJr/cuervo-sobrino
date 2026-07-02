@@ -3,6 +3,7 @@ import React from "react";
 import { useParams, useRouter } from "next/navigation";
 import Footer from "@/app/components/footer";
 import { collections } from "@/app/colectionsWatches/data";
+import Header from "@/app/components/header";
 
 export default function WatchPage() {
   const params = useParams();
@@ -21,6 +22,7 @@ export default function WatchPage() {
 
   return (
     <>
+    <Header />
       {/* Hero */}
       <section className="relative w-full h-screen overflow-hidden">
         <video

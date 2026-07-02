@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Footer from "@/app/components/footer";
 import { Watch, collections } from "@/app/colectionsWatches/data";
+import Header from "@/app/components/header";
 
 export default function WatchInfoPage() {
   const params = useParams();
@@ -34,8 +35,10 @@ export default function WatchInfoPage() {
 
   return (
     <>
+    <div className="w-full h-30 bg-black/50"></div>
+    <Header />
       {/* Back button */}
-      <div className="fixed top-6 left-6 z-50">
+      <div className="fixed top-35 left-6 z-50">
         <button
           onClick={() => router.back()}
           className="flex items-center gap-2 text-white bg-black/40 hover:bg-black/60 backdrop-blur-sm px-4 py-2 text-[10px] tracking-[0.2em] uppercase transition-colors duration-200"

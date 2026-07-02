@@ -26,34 +26,45 @@ export default function Footer() {
         </div>
     </section>
 
-    <footer>
-    <div className="footer-hero">
-        <div className="footer-hero-overlay">
-        <div className="footer-top">
-            <div className="footer-info">
-            <p>Monday-Saturday from 10:30 am to 6:30pm</p>
-            <p>(786) 663-4226 or (786) 740-2313</p>
-            <p>1607 Ponce de Leon Blvd, Coral Gables, Florida 33134</p>
-            </div>
-            <div className="footer-right">
-            <div className="footer-social-label">Socials</div>
-            <div className="footer-social">
-                <a href="#">Instagram</a>
-                <a href="#">X</a>
-                <a href="#">Facebook</a>
-            </div>
-            <div>
-                <div className="footer-social-label">Cuervo y Sobrinos Authorized Dealer</div>
-                <div className="footer-social-label">© 2025 @Le Palais Royal · All rights reserved</div>
-            </div>
-            </div>
-        </div>
-        <div className="imgHolder">
-            <Image src={logoMain} alt="logo" />
-        </div>
-        </div>
+    <footer className="site-footer">
+  <div className="footer-inner">
+    <div className="footer-brand">
+      <Image src={logoMain} alt="Le Palais Royal 305" className="footer-logo" />
+      <p className="footer-dealer">Cuervo y Sobrinos Lepaleis Royal</p>
     </div>
-    </footer>
+
+    <div className="footer-grid">
+      <div className="footer-col">
+        <span className="footer-label">Visítanos</span>
+        <p>1607 Ponce de Leon Blvd</p>
+        <p>Coral Gables Unit 102, Florida 33134</p>
+        <p className="footer-hours">Martes–Sábado · 11:00am–6:30pm</p>
+        <p className="footer-hours">Sunday Close</p>
+        <p>Monday by appointment</p>
+      </div>
+
+      <div className="footer-col">
+        <span className="footer-label">Contacto</span>
+        <a href="tel:+17866634226">(786) 663-4226</a>
+        <a href="tel:+17867402313">(786) 740-2313</a>
+        <a href="tel:+17866634226">(786) 582-1141</a>
+      </div>
+
+      <div className="footer-col">
+        <span className="footer-label">Síguenos</span>
+        <div className="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <span>© 2026 Cuervo y Sobrino Lepaleis Royale · Todos los derechos reservados</span>
+  </div>
+</footer>
     </>     
    )
 }

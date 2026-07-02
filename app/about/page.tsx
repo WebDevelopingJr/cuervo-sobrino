@@ -39,7 +39,7 @@ export default function Aboutus() {
           {/* Grid 2x2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14">  
           <p className="font-['Geist Mono'] text-[16px] text-white/80 text-justify">
-              At Le Palais Royal 305 we believe that choosing something beautiful is
+              Cuervo y Sobrino Le Palaeis Royal we believe that choosing something beautiful is
               an intimate act. That is why every corner of our boutique has been
               thoughtfully designed for you to take your time, explore at ease, and
               discover what truly speaks to who you are.
