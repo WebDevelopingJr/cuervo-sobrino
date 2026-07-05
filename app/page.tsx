@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import Header from './components/header'
 import Footer from './components/footer'
@@ -7,56 +9,138 @@ import catGuay from '../public/images/home/cat-guaya.jpg'
 import catJewelry from '../public/images/home/cat-jewels.jpg'
 import catDress from '../public/images/home/cat-fashion.jpg'
 import guayaPic from '../public/images/home/guayabera-main.jpg'
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+const slides = [
+  {
+    image: "/images/home/slice-main-01.jpg",
+    tag: "Swiss Watches",
+    headline: (
+      <>
+        A modern evolution of the Maison’s most
+        <em className="italic text-[#C9A96E] font-light"> emblematic model</em><br />
+      </>
+    ),
+  },
+  {
+    image: "/images/home/slice01.jpg",
+    tag: "New Arrivals",
+    headline: (
+      <>
+        Timeless craft,<br />
+        modern edge —<br />
+        <em className="italic text-[#C9A96E] font-light">discover the</em><br />
+        latest collection
+      </>
+    ),
+  },
+  {
+    image: "/images/home/slice-guaya.jpg",
+    tag: "Authorized Dealer",
+    headline: (
+      <>
+        Cuervo y Sobrinos The Finest Guayaberas
+        <em className="italic text-[#C9A96E] font-light"> Crafted for Distinction.</em><br />
+      </>
+    ),
+  },
+];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 8000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const goTo = (index: number) => setCurrent(index);
+  const goPrev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  const goNext = () => setCurrent((prev) => (prev + 1) % slides.length);
+
   return (
     <>
       <Header />
-      <section className="relative h-screen min-h-175 flex items-center overflow-hidden">
+          <section className="relative h-screen min-h-175 flex items-center overflow-hidden">
 
-        {/* Background image */}
+      {/* Background images */}
+      {slides.map((slide, index) => (
         <div
-          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
-          style={{ backgroundImage: "url('/images/home/slice01.jpg')" }}
+          key={slide.image}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url('${slide.image}')`, filter: "brightness(0.6)" }}
         />
-      
-        {/* Dark gradient overlay */}
-      
-        {/* Content */}
-        <div className="relative z-10 px-6 sm:px-12 md:pl-28 lg:pl-36 max-w-2xl">
-      
-          {/* Tag */}
-          <div className="inline-block bg-[#8B1A2E] text-white text-[11px] tracking-[0.25em] uppercase px-3 py-1.5 mb-6">
-            Swiss Watches
-          </div>
-      
-          {/* Headline */}
-          <h1 className="font-serif text-xl text-[clamp(32px,5vw,50px)] font-light leading-[1.1] tracking-wide text-white mb-8">
-            The exceptional<br />
-            combination of<br />
-            <em className="italic text-[#C9A96E] font-light">Swiss savoir-faire</em><br />
-            with vibrant Latin soul
-          </h1>
-      
-          {/* CTA */}
-          <a
-            href="#"
-            className="inline-flex items-center gap-2.5 border border-[#C9A96E] text-[#C9A96E]
-              px-7 py-3.5 text-[10px] tracking-[0.25em] uppercase
-              hover:bg-[#C9A96E] hover:text-black transition-colors duration-300"
-          >
-            <span>View Collection</span>
-            <span className="text-sm">↗</span>
-          </a>
-        </div>
-      
-        {/* Scroll hint */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
-          <span className="text-[8px] tracking-[0.35em] uppercase text-white/40">Scroll</span>
-          <div className="w-px h-10 bg-linear-to-b from-[#C9A96E] to-transparent animate-pulse" />
+      ))}
+
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+
+      {/* Content */}
+      <div className="relative z-10 px-6 sm:px-12 md:pl-28 lg:pl-36 max-w-2xl">
+
+        {/* Tag */}
+        <div className="inline-block bg-[#8B1A2E] text-white text-[11px] tracking-[0.25em] uppercase px-3 py-1.5 mb-6">
+          {slides[current].tag}
         </div>
 
-      </section>
+        {/* Headline */}
+        <h1 className="font-serif text-[clamp(32px,5vw,50px)] font-light leading-[1.1] tracking-wide text-white mb-8">
+          {slides[current].headline}
+        </h1>
+
+        {/* CTA */}
+        
+          <a href="#"
+          className="inline-flex items-center gap-2.5 border border-[#C9A96E] text-[#C9A96E]
+            px-7 py-3.5 text-[10px] tracking-[0.25em] uppercase
+            hover:bg-[#C9A96E] hover:text-black transition-colors duration-300"
+        >
+          <span>View Collection</span>
+          <span className="text-sm">↗</span>
+        </a>
+      </div>
+
+      {/* Prev / Next arrows */}
+      <button
+        onClick={goPrev}
+        aria-label="Previous slide"
+        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-10 text-white/50 hover:text-[#C9A96E] transition-colors text-[70px]"
+      >
+        ‹
+      </button>
+      <button
+        onClick={goNext}
+        aria-label="Next slide"
+        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-10 text-white/50 hover:text-[#C9A96E] transition-colors text-[70px]"
+      >
+        ›
+      </button>
+
+      {/* Dot indicators */}
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goTo(index)}
+            aria-label={`Go to slide ${index + 1}`}
+            className={`h-0.5 transition-all duration-300 cursor-pointer ${
+              index === current ? "w-8 bg-[#C9A96E]" : "w-4 bg-white/40"
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Scroll hint */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 cursor-pointer">
+        <span className="text-[8px] tracking-[0.35em] uppercase text-white/40 ">Scroll</span>
+      </div>
+
+    </section>
 
       {/* Card section */}
       <section className="py-24 bg-white">
