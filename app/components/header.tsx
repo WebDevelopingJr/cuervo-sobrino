@@ -31,7 +31,7 @@ export default function Header() {
         <Link href="/watches" onClick={() => setOpenMenu(false)} className="font-serif text-[clamp(28px,7vw,42px)] font-normal tracking-wide text-white/90 hover:text-white transition-colors duration-200 px-6 py-3 leading-tight">
         Watches
         </Link>
-        <Link href="#" onClick={() => setOpenMenu(false)} className="font-serif text-[clamp(28px,7vw,42px)] font-normal tracking-wide text-white/90 hover:text-white transition-colors duration-200 px-6 py-3 leading-tight">
+        <Link href="/jewelry" onClick={() => setOpenMenu(false)} className="font-serif text-[clamp(28px,7vw,42px)] font-normal tracking-wide text-white/90 hover:text-white transition-colors duration-200 px-6 py-3 leading-tight">
         Jewels
         </Link>
         <Link href="#" onClick={() => setOpenMenu(false)} className="font-serif text-[clamp(28px,7vw,42px)] font-normal tracking-wide text-white/90 hover:text-white transition-colors duration-200 px-6 py-3 leading-tight">
@@ -59,7 +59,7 @@ export default function Header() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
-          {[['/', 'Home'], ['/about', 'About Us'], ['/watches', 'Watches'], ['#', 'Jewels'], ['#', 'Fashion']].map(([href, label]) => (
+          {[['/', 'Home'], ['/about', 'About Us'], ['/watches', 'Watches'], ['/jewelry', 'Jewels'], ['/fashion', 'Fashion']].map(([href, label]) => (
             <Link
               key={label}
               href={href}

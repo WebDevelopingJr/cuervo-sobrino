@@ -36,19 +36,14 @@ import allWatches from '../../public/categories/category_allwatches.jpg'
 
 
 
-export const collectionsWatches = [
-  { label: 'Novelius', bg: noveltiousWatch},
-  { label: 'Historiador', bg: historiadotWatch},
-  { label: 'Hemingway', bg: hemiwayWatch},
-  { label: 'Primera Dama', bg: primeraWatch},
-  { label: 'Robusto', bg: robustoWatch},
-  { label: 'Prominente', bg: prominentWatch},
-  { label: 'Esplendidos', bg: esplendWatch},
-  { label: 'Churchill', bg: churchillWatch},
-  { label: 'Buceador', bg: buceadorWatch},
-  { label: 'Chronógrafo', bg: conographWatch},
-  { label: 'Exclusive Selected Pieces', bg: exclusiveSelectWatch},
-  { label: 'View All Watches', bg: allWatches},
+export const collectionsFashion = [
+  { label: 'Necklaces & Pendants', bg: noveltiousWatch},
+  { label: 'Bracelets', bg: historiadotWatch},
+  { label: 'Earrings', bg: hemiwayWatch},
+  { label: 'Rings', bg: primeraWatch},
+  { label: 'Silver Jewelry', bg: robustoWatch},
+  { label: "Men's Jewelry", bg: prominentWatch},
+  { label: 'Purses', bg: allWatches},
 ];
 
 export const collections: Collection[] = [
@@ -1776,28 +1771,3 @@ export const collections: Collection[] = [
     watches: [],
   },
 ];
-
-/* 
-Creation new watch
-
-{
-        name: '',
-        price: '',
-        description: "",
-        images: [
-          '',
-        ],
-        features: [
-          { label: 'Funciones', value: '' },
-          { label: 'Movimientos', value: '' },
-          { label: 'Caso', value: '' },
-          { label: 'Dial', value: '' },
-          { label: 'Manos', value: '' },
-          { label: 'Correa', value: '' },
-          { label: 'Hebilla', value: '' },
-          { label: 'Edicion', value: '' },
-          { label: 'Embalaje', value: '' },
-        ],
-        curiosity: "",
-      },
-*/

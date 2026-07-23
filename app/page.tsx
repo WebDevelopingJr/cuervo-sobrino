@@ -25,6 +25,16 @@ const slides = [
     ),
   },
   {
+    image: "/jewelry/sliceUp-Fashion.jpg",
+    tag: "Swiss Watches",
+    headline: (
+      <>
+        Exclusive designs for the woman of 
+        <em className="italic text-[#C9A96E] font-light"> signature elegance.</em><br />
+      </>
+    ),
+  },
+  {
     image: "/images/home/slice01.jpg",
     tag: "New Arrivals",
     headline: (
