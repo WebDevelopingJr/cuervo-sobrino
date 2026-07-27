@@ -12,7 +12,7 @@ export default function WatchesGrid() {
     <>
     <Header />
     <section className="relative w-full h-screen overflow-hidden flex items-end justify-start">
-      <img src='/jewelry/sliceUp-Fashion.jpg' alt="bg" className="brightness-40 absolute" />
+      <img src='/jewelry/sliceUp-Fashion.jpg' alt="bg" className="brightness-40 absolute inset-0 w-full h-full object-cover" />
       <h1 className="font-serif text-[clamp(64px,7vw,96px)] font-light text-white leading-none tracking-[-0.01em] z-10 mb-20 ml-18">Jewelry</h1>
     </section>
 
