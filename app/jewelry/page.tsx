@@ -20,7 +20,7 @@ export default function WatchesGrid() {
       <div className="max-w-275 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {collectionsJewelry.map((item) => (
-            <div key={item.label} className="relative group h-55 overflow-hidden cursor-pointer" onClick={()=> router.push(`watchesIntern/${item.label}`)}>
+            <div key={item.label} className="relative group h-55 overflow-hidden cursor-pointer" onClick={()=> router.push(`jewleryIntern/${item.label}`)}>
               <Image src={item.bg} alt={item.label} fill
                 className="object-cover object-center grayscale-0 group-hover:grayscale"
               />

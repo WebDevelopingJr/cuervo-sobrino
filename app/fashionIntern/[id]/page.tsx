@@ -2,7 +2,7 @@
 import React from "react";
 import { useParams, useRouter } from "next/navigation";
 import Footer from "@/app/components/footer";
-import { collections } from "@/app/colectionsJewelry/data";
+import { collections } from "@/app/colectionsFashion/app";
 import Header from "@/app/components/header";
 
 export default function WatchPage() {

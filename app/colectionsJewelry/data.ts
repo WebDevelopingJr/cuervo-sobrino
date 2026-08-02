@@ -48,7 +48,7 @@ export const collectionsJewelry = [
 
 export const collections: Collection[] = [
   {
-    label: 'Novelius',
+    label: 'Necklaces & Pendants',
     heroBg: '/images/watches/novelius.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
@@ -208,7 +208,7 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Historiador',
+    label: 'Bracelets',
     heroBg: '/images/watches/historiador.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
@@ -444,7 +444,7 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Hemingway',
+    label: 'Earrings',
     heroBg: '/images/watches/hemingway.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
@@ -528,81 +528,10 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Primera Dama',
+    label: 'Rings',
     heroBg: '/images/watches/primera-dama.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
-      {
-        name: 'Primera Dama',
-        price: '2.450,00',
-        description: "El Cuervo y Sobrinos Historiador Primera Dama está inspirado en la Habana de los años 30, un mundo en el que el baile, la música y los placeres hedonistas eran la norma del día. Femenino y elegante, este reloj de mujer, que presenta numerosos detalles llamativos, es adecuado para cualquier ocasión.",
-        images: [
-          '/watches/primera-dama/primera-dama/3113.1SLB-Soldier-Web-OK-600x6001.png',
-          '/watches/primera-dama/primera-dama/3113B.1SLB-Soldier-Web-OK-600x6002.png',
-          '/watches/primera-dama/primera-dama/3113.1SLB-Perspective-1-600x4503.png',
-          '/watches/primera-dama/primera-dama/3162-humidor-600x6004.jpg',
-        ],
-        features: [
-          { label: 'Funciones', value: 'Horas y minutos' },
-          { label: 'Movimientos', value: 'Ronda 772, 73/4»’, cuarzo, diámetro 17,2 mm, altura 2,5 mm, longevía 34 meses, 5 piedrasRonda 772, 73/4»’, cuarzo, diámetro 17,2 mm, altura 2,5 mm, larga vida útil 34 meses, 5 rubis' },
-          { label: 'Caso', value: 'Acero inoxidable, diámetro 36 mm, altura 7,8 mm, cristal de zafiro doble curvado con recubrimiento antirreflejante, resistente al agua hasta 5 ATM, atornillado con 4 tornillos' },
-          { label: 'Dial', value: 'Caráter de arenisca azul con tres diamantes, vvs, 0.018 quilates, emblema CyS aplicado' },
-          { label: 'Manos', value: 'Hora y minutos con tratamiento con rodio' },
-          { label: 'Correa', value: 'Pulsera de caimán de Luisiana de alto brillo y metal de acero inoxidable' },
-          { label: 'Hebilla', value: 'Hebilla de acero inoxidable grabada con el emblema CyS' },
-          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211' },
-        ],
-        curiosity: "¿Sabías que la Primera Dama se inspira en la glamurosa Habana de los años 30, una época en la que la ciudad era un centro de lujo, música y baile? Este elegante reloj cuenta con una caja de acero inoxidable de 36 mm y una esfera de nácar adornada con diamantes, lo que añade un toque de sofisticación. El reloj está disponible con una correa de caimán de Luisiana brillante y una pulsera de acero inoxidable a juego.",
-      },
-      
-      {
-        name: 'Primera Dama ',
-        price: '2.450,00',
-        description: "El Cuervo y Sobrinos Historiador Primera Dama está inspirado en la Habana de los años 30, un mundo en el que el baile, la música y los placeres hedonistas eran la norma del día. Femenino y elegante, este reloj de mujer, que presenta numerosos detalles llamativos, es adecuado para cualquier ocasión.",
-        images: [
-          '/watches/primera-dama/primera-dama-02/3113.1SR-Soldier-Web-OK-600x6001.png',
-          '/watches/primera-dama/primera-dama-02/3113B.1SR-Soldier-Web-OK-600x6002.png',
-          '/watches/primera-dama/primera-dama-02/3113.1SR-Perspective-2-600x4503.png',
-          '/watches/primera-dama/primera-dama-02/3113.1SR-Perspective-1-600x4504.png',
-          '/watches/primera-dama/primera-dama-02/3162-humidor-600x6005.jpg',
-        ],
-        features: [
-          { label: 'Funciones', value: 'Horas y minutos' },
-          { label: 'Movimientos', value: 'Ronda 772, 73/4»’, cuarzo, diámetro 17,2 mm, altura 2,5 mm, longevía 34 meses, 5 piedrasRonda 772, 73/4»’, cuarzo, diámetro 17,2 mm, altura 2,5 mm, larga vida útil 34 meses, 5 rubis' },
-          { label: 'Caso', value: 'Acero inoxidable, diámetro 36 mm, altura 7,8 mm, cristal de zafiro doble curvado con recubrimiento antirreflejante, resistente al agua hasta 5 ATM, atornillado con 4 tornillos' },
-          { label: 'Dial', value: 'Caráter de piedras de jade rojo con tres diamantes, vvs, 0.018 quilates, emblema CyS aplicado' },
-          { label: 'Manos', value: 'Hora y minutos con tratamiento con rodio' },
-          { label: 'Correa', value: 'Pulsera de caimán de Luisiana de alto brillo y metal de acero inoxidable' },
-          { label: 'Hebilla', value: 'Hebilla de acero inoxidable grabada con el emblema CyS' },
-          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211' },
-        ],
-        curiosity: "¿Sabías que la Primera Dama se inspira en la glamurosa Habana de los años 30, una época en la que la ciudad era un centro de lujo, música y baile? Este elegante reloj cuenta con una caja de acero inoxidable de 36 mm y una esfera de nácar adornada con diamantes, lo que añade un toque de sofisticación. El reloj está disponible con una correa de caimán de Luisiana brillante y una pulsera de acero inoxidable a juego.",
-      },
-
-      {
-        name: 'Primera Dama  ',
-        price: '2.450,00',
-        description: "El Cuervo y Sobrinos Historiador Primera Dama está inspirado en la Habana de los años 30, un mundo en el que el baile, la música y los placeres hedonistas eran la norma del día. Femenino y elegante, este reloj de mujer, que presenta numerosos detalles llamativos, es adecuado para cualquier ocasión.",
-        images: [
-          '/watches/primera-dama/primera-dama-03/3113.1SG-Soldier-Web-OK-600x6001.png',
-          '/watches/primera-dama/primera-dama-03/3113B.1SG-Soldier-Web-OK-600x6002.png',
-          '/watches/primera-dama/primera-dama-03/3113.1SG-Perspectie-2-Web-600x4503.png',
-          '/watches/primera-dama/primera-dama-03/3113.1SG-Perspectie-1-Web-600x4504.png',
-          '/watches/primera-dama/primera-dama-03/3162-humidor-600x6005.jpg',
-        ],
-        features: [
-          { label: 'Funciones', value: 'Horas y minutos' },
-          { label: 'Movimientos', value: 'Ronda 772, 73/4»’, cuarzo, diámetro 17,2 mm, altura 2,5 mm, longevía 34 meses, 5 piedrasRonda 772, 73/4»’, cuarzo, diámetro 17,2 mm, altura 2,5 mm, larga vida útil 34 meses, 5 rubis' },
-          { label: 'Caso', value: 'Acero inoxidable, diámetro 36 mm, altura 7,8 mm, cristal de zafiro doble curvado con recubrimiento antirreflectante, resistente al agua hasta 5 ATM, atornillado con 4 tornillos' },
-          { label: 'Dial', value: 'Esfera de piedras de mármol verde con tres diamantes, vvs, 0.018 quilates, emblema CyS aplicado' },
-          { label: 'Manos', value: 'Hora y minutos con tratamiento con rodio' },
-          { label: 'Correa', value: 'Pulsera de caimán de Luisiana de alto brillo y metal de acero inoxidable' },
-          { label: 'Hebilla', value: 'Hebilla de acero inoxidable grabada con el emblema CyS' },
-          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211' },
-        ],
-        curiosity: "¿Sabías que la Primera Dama se inspira en la glamurosa Habana de los años 30, una época en la que la ciudad era un centro de lujo, música y baile? Este elegante reloj cuenta con una caja de acero inoxidable de 36 mm y una esfera de nácar adornada con diamantes, lo que añade un toque de sofisticación. El reloj está disponible con una correa de caimán de Luisiana brillante y una pulsera de acero inoxidable a juego.",
-      },
-
       {
         name: 'Primera Dama   ',
         price: '2.450,00',
@@ -800,7 +729,7 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Robusto',
+    label: 'Silver Jewelry',
     heroBg: '/images/watches/robarto.jpg',
     backBanner: '/cat-background/sliceBassCuba.jpg',
     watches: [ 
@@ -1053,7 +982,7 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Prominente',
+    label: "Men's Jewelry",
     heroBg: '/images/watches/prominente.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
@@ -1198,7 +1127,7 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Esplendidos',
+    label: 'View All Jewelry',
     heroBg: '/images/watches/esplendidos.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
