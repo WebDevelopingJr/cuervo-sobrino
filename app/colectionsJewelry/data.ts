@@ -37,19 +37,18 @@ import allWatches from '../../public/categories/category_allwatches.jpg'
 
 
 export const collectionsJewelry = [
-  { label: 'Necklaces & Pendants', bg: noveltiousWatch},
-  { label: 'Bracelets', bg: historiadotWatch},
-  { label: 'Earrings', bg: hemiwayWatch},
-  { label: 'Rings', bg: primeraWatch},
-  { label: 'Silver Jewelry', bg: robustoWatch},
-  { label: "Men's Jewelry", bg: prominentWatch},
-  { label: 'View All Jewelry', bg: allWatches},
+  { label: 'Necklaces & Pendants', bg: '/jewelryCats/cat_Necklaces.jpg'},
+  { label: 'Bracelets', bg: '/jewelryCats/cat_Brazalets.jpg'},
+  { label: 'Earrings', bg: '/jewelryCats/cat_Earrings.jpg'},
+  { label: 'Rings', bg: '/jewelryCats/cat_Rings.jpg'},
+  { label: 'Silver Jewelry', bg: '/jewelryCats/cat_Silver.jpg'},
+  { label: "Men's Jewelry", bg: '/jewelryCats/cat_Men-Jewer.jpg'},
 ];
 
 export const collections: Collection[] = [
   {
     label: 'Necklaces & Pendants',
-    heroBg: '/images/watches/novelius.jpg',
+    heroBg: 'public/jewelryCats/cat_Necklaces.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
       {
@@ -1182,12 +1181,6 @@ export const collections: Collection[] = [
         curiosity: 'La esfera de los Espléndidos Vitola presenta un motivo de hojas, que emula la apariencia de las hojas de tabaco. Además, los índices aplicados están diseñados para parecerse a los famosos puros cubanos.',
       }
     ],
-  },
-  {
-    label: 'View All Watches',
-    heroBg: '/images/watches/all.jpg',
-    backBanner: '/cat-background/sliceCapitol.jpg',
-    watches: [],
   },
 ];
 

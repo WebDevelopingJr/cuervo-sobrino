@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Footer from '../components/footer';
 import { useRouter } from 'next/navigation';
-import { collectionsJewelry } from '../colectionsJewelry/data'
+import { collectionsFashion } from '@/app/colectionsFashion/data'
 import Header from '../components/header';
 
 export default function WatchesGrid() {
@@ -19,7 +19,7 @@ export default function WatchesGrid() {
     <section className="py-20 px-6">
       <div className="max-w-275 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-          {collectionsJewelry.map((item) => (
+          {collectionsFashion.map((item) => (
             <div key={item.label} className="relative group h-55 overflow-hidden cursor-pointer" onClick={()=> router.push(`fashionIntern/${item.label}`)}>
               <Image src={item.bg} alt={item.label} fill
                 className="object-cover object-center grayscale-0 group-hover:grayscale"

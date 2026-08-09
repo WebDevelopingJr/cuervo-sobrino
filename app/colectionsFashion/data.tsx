@@ -37,13 +37,9 @@ import allWatches from '../../public/categories/category_allwatches.jpg'
 
 
 export const collectionsFashion = [
-  { label: 'Necklaces & Pendants', bg: noveltiousWatch},
-  { label: 'Bracelets', bg: historiadotWatch},
-  { label: 'Earrings', bg: hemiwayWatch},
-  { label: 'Rings', bg: primeraWatch},
-  { label: 'Silver Jewelry', bg: robustoWatch},
-  { label: "Men's Jewelry", bg: prominentWatch},
-  { label: 'View All Jewelry', bg: allWatches},
+  { label: "Women's clothes", bg: '/fashionCat/cat_Woman-Fashion.jpg'},
+  { label: 'Guayaberas', bg: '/fashionCat/cat_Guayaberas.jpg'},
+  { label: 'Purse', bg: '/fashionCat/cat_Purse.jpg'},
 ];
 
 export const collections: Collection[] = [
