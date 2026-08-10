@@ -48,8 +48,8 @@ export const collectionsJewelry = [
 export const collections: Collection[] = [
   {
     label: 'Necklaces & Pendants',
-    heroBg: 'public/jewelryCats/cat_Necklaces.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    heroBg: 'public/jewelry/sliceUp-Fashion.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
         name: 'Gran Premio de Cuba 1957',
@@ -209,7 +209,7 @@ export const collections: Collection[] = [
   {
     label: 'Bracelets',
     heroBg: '/images/watches/historiador.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
         name: 'Bracelet 01',
@@ -235,7 +235,7 @@ export const collections: Collection[] = [
   {
     label: 'Earrings',
     heroBg: '/images/watches/hemingway.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
         name: 'Hemingway Icónico',
@@ -319,7 +319,7 @@ export const collections: Collection[] = [
   {
     label: 'Rings',
     heroBg: '/images/watches/primera-dama.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
         name: 'Ring 01',
@@ -384,7 +384,7 @@ export const collections: Collection[] = [
   {
     label: 'Silver Jewelry',
     heroBg: '/images/watches/robarto.jpg',
-    backBanner: '/cat-background/sliceBassCuba.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [ 
         {
           name: '1935 ',
@@ -637,7 +637,7 @@ export const collections: Collection[] = [
   {
     label: "Men's Jewelry",
     heroBg: '/images/watches/prominente.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
         name: 'Icónico Doble Tiempo',
@@ -782,7 +782,7 @@ export const collections: Collection[] = [
   {
     label: 'View All Jewelry',
     heroBg: '/images/watches/esplendidos.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
         name: 'Heritage',
