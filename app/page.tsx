@@ -26,7 +26,7 @@ const slides = [
   },
   {
     image: "/jewelry/sliceUp-Fashion.jpg",
-    tag: "Swiss Watches",
+    tag: "All Jewelry",
     headline: (
       <>
         Exclusive designs for the woman of 
@@ -63,7 +63,7 @@ const slides = [
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 8000);
+    }, 9000);
     return () => clearInterval(interval);
   }, []);
 

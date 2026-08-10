@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import Footer from "@/app/components/footer";
 import { Watch, collections } from "@/app/colectionsWatches/data";
 import Header from "@/app/components/header";
+import Link from "next/link";
 
 export default function WatchInfoPage() {
   const params = useParams();
@@ -108,12 +109,12 @@ export default function WatchInfoPage() {
                 {watch.description}
               </p>
 
-              <button className="flex items-center gap-2 bg-[#8B0000] hover:bg-[#6d0000] transition-colors duration-200 text-white text-[10px] tracking-[0.2em] uppercase font-light px-8 py-4 cursor-pointer">
+              <Link href={'/contact'} className="w-45 flex items-center gap-2 bg-[#8B0000] hover:bg-[#6d0000] transition-colors duration-200 text-white text-[10px] tracking-[0.2em] uppercase font-light px-8 py-4 cursor-pointer">
                 Inquire Now
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
