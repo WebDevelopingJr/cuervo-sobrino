@@ -1205,7 +1205,7 @@ export const collections: Collection[] = [
   {
     label: 'Esplendidos',
     heroBg: '/cat-background/Top-Esplendidos.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Esplendidos.jpg',
     watches: [
       {
         name: 'Heritage',
