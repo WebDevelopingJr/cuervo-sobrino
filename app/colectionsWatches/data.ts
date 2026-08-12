@@ -55,7 +55,7 @@ export const collections: Collection[] = [
   {
     label: 'Novelius',
     heroBg: '/images/watches/novelius.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Novelius01.jpg',
     watches: [
       {
         name: 'Gran Premio de Cuba 1957',
@@ -215,7 +215,7 @@ export const collections: Collection[] = [
   {
     label: 'Historiador',
     heroBg: '/images/watches/historiador.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Novelius01.jpg',
     watches: [
       {
         name: 'Gran Reserva',
@@ -1060,7 +1060,7 @@ export const collections: Collection[] = [
   {
     label: 'Prominente',
     heroBg: '/images/watches/prominente.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Prominente.jpg',
     watches: [
       {
         name: 'Icónico Doble Tiempo',
@@ -1204,7 +1204,7 @@ export const collections: Collection[] = [
   },
   {
     label: 'Esplendidos',
-    heroBg: '/images/watches/esplendidos.jpg',
+    heroBg: '/cat-background/Top-Esplendidos.jpg',
     backBanner: '/cat-background/slice-Summer.jpg',
     watches: [
       {
@@ -1262,7 +1262,7 @@ export const collections: Collection[] = [
   {
     label: 'Churchill',
     heroBg: '/images/watches/churchill.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Churchill.jpg',
     watches: [
       {
         name: 'Sir Winston',
@@ -1501,7 +1501,7 @@ export const collections: Collection[] = [
   {
     label: 'Chronógrafo',
     heroBg: '/images/watches/chronografo.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Cronografo.jpg',
     watches: [
       {
         name: 'Gran Premio de Cuba 1957',
