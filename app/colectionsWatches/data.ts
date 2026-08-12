@@ -1649,7 +1649,7 @@ export const collections: Collection[] = [
   {
     label: 'Exclusive Selected Pieces',
     heroBg: '/images/watches/exclusive.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: '/cat-background/Top-Exclusive.jpg',
     watches: [
       {
         name: 'Robusto Pedro Murias',
@@ -1772,7 +1772,7 @@ export const collections: Collection[] = [
   {
     label: 'View All Watches',
     heroBg: '/images/watches/all.jpg',
-    backBanner: '/cat-background/sliceCapitol.jpg',
+    backBanner: '/cat-background/cat-allWaches.jpg',
     watches: [
       {
         name: 'Gran Premio de Cuba 1957',
