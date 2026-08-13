@@ -48,7 +48,7 @@ export const collectionsWatches = [
   { label: 'Buceador', bg: buceadorWatch},
   { label: 'Chronógrafo', bg: conographWatch},
   { label: 'Exclusive Selected Pieces', bg: exclusiveSelectWatch},
-  { label: 'View All Watches', bg: '/cat-background/sliceCapitol.jpg'},
+  { label: 'View All Watches', bg: '/cat-background/cat-allWaches.jpg'},
 ];
 
 export const collections: Collection[] = [
