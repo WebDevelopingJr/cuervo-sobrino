@@ -1646,7 +1646,7 @@ export const collections: Collection[] = [
       },
     ],
   },
-  {
+  { 
     label: 'Exclusive Selected Pieces',
     heroBg: '/images/watches/exclusive.jpg',
     backBanner: '/cat-background/Top-Exclusive.jpg',
