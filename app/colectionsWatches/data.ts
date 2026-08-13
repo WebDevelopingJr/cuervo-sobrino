@@ -1771,7 +1771,7 @@ export const collections: Collection[] = [
   },
   {
     label: 'View All Watches',
-    heroBg: '/cat-background/cat-allWaches.jpg',
+    heroBg: '/cat-background/sliceCapitol.jpg',
     backBanner: '/cat-background/sliceCapitol.jpg',
     watches: [
       {
