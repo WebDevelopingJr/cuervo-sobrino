@@ -1771,8 +1771,8 @@ export const collections: Collection[] = [
   },
   {
     label: 'View All Watches',
-    heroBg: '/images/watches/all.jpg',
-    backBanner: '/cat-background/cat-allWaches.jpg',
+    heroBg: '/cat-background/cat-allWaches.jpg',
+    backBanner: '/cat-background/sliceCapitol.jpg',
     watches: [
       {
         name: 'Gran Premio de Cuba 1957',
