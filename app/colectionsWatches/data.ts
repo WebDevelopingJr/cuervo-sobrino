@@ -451,7 +451,7 @@ export const collections: Collection[] = [
   {
     label: 'Hemingway',
     heroBg: '/images/watches/hemingway.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    backBanner: 'public/cat-background/Top-Hemingway.jpg',
     watches: [
       {
         name: 'Hemingway Icónico',
