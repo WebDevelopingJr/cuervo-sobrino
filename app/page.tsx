@@ -164,7 +164,7 @@ const slides = [
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-8">
 
           {/* Watches */}
-          <div className="relative overflow-hidden group cursor-pointer h-145">
+          <a href="/watches" className="relative overflow-hidden group cursor-pointer h-145 block">
             <Image src={catWatches}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="watches" />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-[#7B1C3E]/70 transition-colors duration-500" />
@@ -175,10 +175,10 @@ const slides = [
                 <span className="text-[10px] tracking-[0.25em] uppercase text-[#C9A96E]">View More</span>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* Guayaberas */}
-          <div className="relative overflow-hidden group cursor-pointer h-145">
+          <a href="/fashionIntern/Guayaberas" className="relative overflow-hidden group cursor-pointer h-145 block">
             <Image src={catGuay}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="guayaberas" />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-[#7B1C3E]/70 transition-colors duration-500" />
@@ -189,10 +189,10 @@ const slides = [
                 <span className="text-[10px] tracking-[0.25em] uppercase text-[#C9A96E]">View More</span>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* Jewels */}
-          <div className="relative overflow-hidden group cursor-pointer h-145">
+          <a href="/jewelry" className="relative overflow-hidden group cursor-pointer h-145 block">
             <Image src={catJewelry}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="jewlery" />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-[#7B1C3E]/70 transition-colors duration-500" />
@@ -203,9 +203,10 @@ const slides = [
                 <span className="text-[10px] tracking-[0.25em] uppercase text-[#C9A96E]">View More</span>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* Fashion */}
+          <a href="/jewelry" className="relative overflow-hidden group cursor-pointer h-145 block">
           <div className="relative overflow-hidden group cursor-pointer h-145">
             <Image src={catDress}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="dress" />
@@ -218,7 +219,7 @@ const slides = [
               </div>
             </div>
           </div>
-
+        </a>
         </div>
       </section>
 
