@@ -206,7 +206,7 @@ const slides = [
           </a>
 
           {/* Fashion */}
-          <a href="/jewelry" className="relative overflow-hidden group cursor-pointer h-145 block">
+          <a href="/fashion" className="relative overflow-hidden group cursor-pointer h-145 block">
           <div className="relative overflow-hidden group cursor-pointer h-145">
             <Image src={catDress}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="dress" />
