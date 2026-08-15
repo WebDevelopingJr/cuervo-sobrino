@@ -1070,7 +1070,6 @@ export const collections: Collection[] = [
           '/watches/prominente/iconico-doble-tiempo/1112-1AM-Soldier-Web-600x6001.png',
           '/watches/prominente/iconico-doble-tiempo/1112-1AM-Perspective-4-Web-600x6002.png',
           '/watches/prominente/iconico-doble-tiempo/1112-1AM-Perspective-2-Web-600x6003.png',
-          '/watches/prominente/iconico-doble-tiempo/1112-1AM-Perspective-3-Web-600x6004.png',
           '/watches/prominente/iconico-doble-tiempo/historiador-tradicion-san-rafael-3-1-600x6005.png',
         ],
         features: [

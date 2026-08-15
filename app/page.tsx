@@ -146,7 +146,10 @@ const slides = [
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 cursor-pointer">
+      <div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 cursor-pointer"
+        onClick={() => window.scrollBy({ top: 850, left: 0, behavior: 'smooth' })}
+      >
         <span className="text-[8px] tracking-[0.35em] uppercase text-white/40 ">Scroll</span>
       </div>
 
