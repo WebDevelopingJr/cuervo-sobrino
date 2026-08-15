@@ -534,8 +534,8 @@ export const collections: Collection[] = [
   },
   {
     label: 'Primera Dama',
-    heroBg: '/images/watches/primera-dama.jpg',
-    backBanner: '/cat-background/slice-Summer.jpg',
+    heroBg: '/cat-background/Top-PimeraDama.jpg',
+    backBanner: '/cat-background/Top-PimeraDama.jpg',
     watches: [
       {
         name: 'Primera Dama',
