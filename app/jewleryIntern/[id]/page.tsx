@@ -78,7 +78,7 @@ export default function WatchPage() {
               {/* Discover Button */}
               <div className="shrink-0">
                 <button
-                  onClick={() => router.push(`/jewleryIntern/${encodeURIComponent(watch.name)}`)}
+                  onClick={() => router.push(`/jelweryContainer/${encodeURIComponent(watch.name)}`)}
                   className="flex items-center gap-2 bg-[#8B0000] hover:bg-[#6d0000] transition-colors duration-200 text-white text-[10px] tracking-[0.2em] uppercase font-light px-5 py-3 cursor-pointer"
                 >
                   Discover
