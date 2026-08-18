@@ -63,8 +63,8 @@ export default function Footer() {
   <div className="footer-bottom">
     <span>© 2026 Cuervo y Sobrino Lepaleis Royale · Todos los derechos reservados</span>
     <div className="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
+      <a href="/privacyPolicy">Privacy Policy</a>
+      <a href="/termsUse">Terms of Use</a>
     </div>
   </div>
 </footer>
