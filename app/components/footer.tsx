@@ -46,7 +46,6 @@ export default function Footer() {
       <div className="footer-col">
         <span className="footer-label">Contacto</span>
         <a href="tel:+17866634226">(786) 663-4226</a>
-        <a href="tel:+17867402313">(786) 740-2313</a>
         <a href="tel:+17866634226">(786) 582-1141</a>
       </div>
 
@@ -63,6 +62,10 @@ export default function Footer() {
 
   <div className="footer-bottom">
     <span>© 2026 Cuervo y Sobrino Lepaleis Royale · Todos los derechos reservados</span>
+    <div className="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
   </div>
 </footer>
     </>     

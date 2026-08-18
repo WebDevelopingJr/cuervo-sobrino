@@ -25,7 +25,7 @@ export default function WatchPage() {
     <Header />
       {/* Hero */}
       <section className="relative w-full h-screen overflow-hidden">
-        <img src={collection.backBanner} alt="bg" className="brightness-40 w-full" />
+        <img src={collection.backBanner} alt="bg" className="brightness-40 w-full h-full object-cover" />
         <div className="absolute bottom-16 left-16">
           <h1 className="font-serif text-[clamp(48px,6vw,88px)] font-light text-white leading-none tracking-[-0.01em]">
             {collection.label}

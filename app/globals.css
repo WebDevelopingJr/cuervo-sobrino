@@ -207,10 +207,18 @@
 .footer-bottom {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   border-top: .5px solid #c9a84c1f;
   padding: 1.5rem 3rem;
 }
-
+.footer-links {
+  font-size: 11px;
+  display: flex;
+  gap: 10px;
+  color: rgba(245, 240, 230, 0.55);
+}
 .footer-bottom span {
   font-size: 11px;
   letter-spacing: 0.1em;
