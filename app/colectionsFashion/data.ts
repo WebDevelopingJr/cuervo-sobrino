@@ -23,7 +23,7 @@ export type Collection = {
 
 export const collectionsFashion = [
   { label: "Women's clothes", bg: '/fashionCat/cat_Woman2-Fashion.jpg'},
-  { label: 'Guayaberas', bg: '/fashionCat/cat_Men-Fashion.jpg'},
+  { label: "Men's Clothes", bg: '/fashionCat/cat_Men-Fashion.jpg'},
   { label: 'Purse', bg: '/fashionCat/cat_Purse.jpg'},
 ];
 
@@ -98,7 +98,7 @@ export const collections: Collection[] = [
     ],
   },
   {
-    label: 'Guayaberas',
+    label: "Men's Clothes",
     heroBg: '/images/watches/historiador.jpg',
     backBanner: '/images/home/slice-guaya.jpg',
     watches: [
