@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
     const { name, lastname, email, phone, subject } = await request.json();
@@ -13,6 +11,15 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: 'Not service set yet' },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const { error } = await resend.emails.send({
       from: 'Le Palais Royal 305 <onboarding@resend.dev>', // cambia esto cuando verifiques tu dominio
