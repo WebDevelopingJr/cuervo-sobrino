@@ -22,8 +22,8 @@ export type Collection = {
 
 
 export const collectionsFashion = [
-  { label: "Women's clothes", bg: '/fashionCat/cat_Woman-Fashion.jpg'},
-  { label: 'Guayaberas', bg: '/fashionCat/cat_Guayaberas.jpg'},
+  { label: "Women's clothes", bg: '/fashionCat/cat_Woman2-Fashion.jpg'},
+  { label: 'Guayaberas', bg: '/fashionCat/cat_Men-Fashion.jpg'},
   { label: 'Purse', bg: '/fashionCat/cat_Purse.jpg'},
 ];
 
