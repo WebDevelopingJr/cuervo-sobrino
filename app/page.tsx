@@ -5,6 +5,7 @@ import Header from './components/header'
 import Footer from './components/footer'
 /* Images */
 import catWatches from '../public/images/home/cat-watches.jpg'
+import watchesSlide from '../public/images/home/watches01.jpg'
 import catGuay from '../public/images/home/cat-guaya.jpg'
 import catJewelry from '../public/images/home/cat-jewels.jpg'
 import catDress from '../public/images/home/cat-fashion.jpg'
@@ -17,6 +18,7 @@ const slides = [
   {
     image: "/images/home/slice-main-01.jpg",
     tag: "Swiss Watches",
+    link: '/watches',
     headline: (
       <>
         A modern evolution of the Maison’s most
@@ -27,6 +29,7 @@ const slides = [
   {
     image: "/jewelry/sliceUp-Fashion.jpg",
     tag: "All Jewelry",
+    link: '/jewelry',
     headline: (
       <>
         Exclusive designs for the woman of 
@@ -37,6 +40,7 @@ const slides = [
   {
     image: "/images/home/slice01.jpg",
     tag: "New Arrivals",
+    link: '/watches',
     headline: (
       <>
         Timeless craft,<br />
@@ -49,6 +53,7 @@ const slides = [
   {
     image: "/images/home/slice-guaya.jpg",
     tag: "Authorized Dealer",
+    link: '/fashionIntern/Guayaberas',
     headline: (
       <>
         Cuervo y Sobrinos The Finest Guayaberas
@@ -105,7 +110,7 @@ const slides = [
 
         {/* CTA */}
         
-          <a href="#"
+          <a href={slides[current].link}
           className="inline-flex items-center gap-2.5 border border-[#C9A96E] text-[#C9A96E]
             px-7 py-3.5 text-[10px] tracking-[0.25em] uppercase
             hover:bg-[#C9A96E] hover:text-black transition-colors duration-300"
@@ -236,7 +241,7 @@ const slides = [
           <div className="relative overflow-hidden group md:order-2">
             <div className="absolute inset-3 border border-[#C9A96E]/20 z-10 pointer-events-none transition-all duration-400 group-hover:inset-2" />
             <Image
-              src={catWatches}
+              src={watchesSlide}
               alt="Chronograph"
               className="w-full aspect-4/5 object-cover filter-[sepia(15%)_contrast(1.1)] transition-transform duration-700 ease-out group-hover:scale-[1.04]"
             />
@@ -245,16 +250,16 @@ const slides = [
           {/* Text — left on desktop */}
           <div className="md:order-1 py-4">
             <h2 className="font-serif text-[clamp(28px,3vw,46px)] font-light leading-[1.15] tracking-wide text-black mb-8">
-              Chronograph
+              Hemingway Limited
             </h2>
             <div className="w-12 h-px bg-[#C9A96E] mb-7" />
             <p className="text-[13.5px] leading-[1.9] text-black mb-6 max-w-105">
-              Cuervo y Sobrinos and history are two entities that are inextricably linked. Since the company was founded in Havana, back in 1882, its journey has been punctuated by a series of milestones.
+              Cuervo y Sobrinos pays tribute to its longtime and loyal customer Ernest Hemingway, celebrated writer and authentic legend of the 20th century, with a specific collection entirely dedicated to the writer.
             </p>
             <p className="text-[13.5px] leading-[1.9] text-black mb-10 max-w-105">
-              Chronographs are in the DNA of the brand since the beginning, both classic models and sporty watches.
+              All the models from Hemingway collection are Limited Edition and boast a license officially granted by Hemingway Limited, an organization that manages the Ernest Hemingway© brand.
             </p>
-            <a href="#" className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] uppercase text-stone-400 hover:gap-5 transition-all duration-300 group/link">
+            <a href="/watchesIntern/Hemingway" className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] uppercase text-stone-400 hover:gap-5 transition-all duration-300 group/link">
               <span className="block w-9 h-px bg-[#C9A96E] group-hover/link:w-14 transition-all duration-300" />
               Discover
             </a>

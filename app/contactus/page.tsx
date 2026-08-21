@@ -1,287 +1,155 @@
 'use client';
+import { useState } from 'react';
 import Footer from '../components/footer';
 import Header from '../components/header';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: '', lastname: '', email: '', phone: '', subject: '',
+  });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error();
+
+      setStatus('sent');
+      setFormData({ name: '', lastname: '', email: '', phone: '', subject: '' });
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
-    <main className="contact-page">
-      <div className="header-shell">
+    <main className="min-h-screen bg-linear-to-b from-[#f8f3ed] to-[#f1e7dc]">
+      <div className="sticky top-0 z-20 bg-[#1f1f1f]/90 backdrop-blur-md border-b border-[#c6a56a]/35 shadow-[0_8px_30px_rgba(19,31,28,0.1)]">
         <Header />
       </div>
 
-      <section className="contact-hero">
-        <div className="hero-content">
-          <p className="eyebrow">Contact</p>
-          <h1>Get in Touch With Us</h1>
-          <p className="subtitle">
+      {/* Hero */}
+      <section className="px-6 pt-20 pb-8 bg-linear-to-br from-[#2a0f0f] to-[#4a1818] text-[#f7f1e8]">
+        <div className="max-w-6xl mx-auto py-12 pb-6">
+          <p className="inline-block text-sm tracking-[0.18rem] uppercase text-[#d8bf8f] mb-4">
+            Contact
+          </p>
+          <h1 className="text-[clamp(2.5rem,5vw,4.6rem)] leading-[1.05] tracking-[-0.04em] max-w-3xl m-0">
+            Get in Touch With Us
+          </h1>
+          <p className="max-w-2xl mt-5 text-[#f7f1e8]/80 text-lg leading-relaxed">
             We're ready to help you find the perfect watch or clothing piece
             and provide exceptional service for your needs.
           </p>
         </div>
       </section>
 
-      <section className="contact-section">
-        <div className="form-card">
-          <h2>Send Us a Message</h2>
-          <form className="contact-form">
-            <div className="field-row">
-              <label>
+      {/* Form + Info */}
+      <section className="max-w-6xl mx-auto -mt-10 mb-16 px-6 grid grid-cols-1 md:grid-cols-[1.5fr_0.8fr] gap-8 items-start">
+        <div className="bg-white/76 border border-[#1f2c2a]/8 rounded-3xl shadow-[0_20px_50px_rgba(19,31,28,0.08)] backdrop-blur-sm p-8">
+          <h2 className="mb-6 text-[#1d2f2c]">Send Us a Message</h2>
+
+          <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label className="flex flex-col gap-2.5 text-sm font-semibold text-[#233d38]">
                 First Name
-                <input type="text" name="name" placeholder="Your first name" />
+                <input
+                  type="text" name="name" placeholder="Your first name"
+                  value={formData.name} onChange={handleChange} required
+                  className="w-full border border-[#1f2c2a]/12 bg-[#f7f1e8]/85 rounded-xl px-4 py-3.5 text-[#1d2f2c] placeholder:text-[#1d2f2c]/55 focus:outline-none focus:border-[#c6a56a]/85 focus:ring-4 focus:ring-[#c6a56a]/18 transition-colors"
+                />
               </label>
-              <label>
+              <label className="flex flex-col gap-2.5 text-sm font-semibold text-[#233d38]">
                 Last Name
-                <input type="text" name="lastname" placeholder="Your last name" />
+                <input
+                  type="text" name="lastname" placeholder="Your last name"
+                  value={formData.lastname} onChange={handleChange}
+                  className="w-full border border-[#1f2c2a]/12 bg-[#f7f1e8]/85 rounded-xl px-4 py-3.5 text-[#1d2f2c] placeholder:text-[#1d2f2c]/55 focus:outline-none focus:border-[#c6a56a]/85 focus:ring-4 focus:ring-[#c6a56a]/18 transition-colors"
+                />
               </label>
             </div>
 
-            <div className="field-row">
-              <label>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label className="flex flex-col gap-2.5 text-sm font-semibold text-[#233d38]">
                 Email
-                <input type="email" name="email" placeholder="your@email.com" />
+                <input
+                  type="email" name="email" placeholder="your@email.com"
+                  value={formData.email} onChange={handleChange} required
+                  className="w-full border border-[#1f2c2a]/12 bg-[#f7f1e8]/85 rounded-xl px-4 py-3.5 text-[#1d2f2c] placeholder:text-[#1d2f2c]/55 focus:outline-none focus:border-[#c6a56a]/85 focus:ring-4 focus:ring-[#c6a56a]/18 transition-colors"
+                />
               </label>
-              <label>
+              <label className="flex flex-col gap-2.5 text-sm font-semibold text-[#233d38]">
                 Phone
-                <input type="tel" name="phone" placeholder="(555) 123-4567" />
+                <input
+                  type="tel" name="phone" placeholder="(555) 123-4567"
+                  value={formData.phone} onChange={handleChange}
+                  className="w-full border border-[#1f2c2a]/12 bg-[#f7f1e8]/85 rounded-xl px-4 py-3.5 text-[#1d2f2c] placeholder:text-[#1d2f2c]/55 focus:outline-none focus:border-[#c6a56a]/85 focus:ring-4 focus:ring-[#c6a56a]/18 transition-colors"
+                />
               </label>
             </div>
 
-            <label>
+            <label className="flex flex-col gap-2.5 text-sm font-semibold text-[#233d38]">
               Subject
-              <input type="text" name="subject" placeholder="What would you like to get for you" />
+              <input
+                type="text" name="subject" placeholder="What would you like to get for you"
+                value={formData.subject} onChange={handleChange} required
+                className="w-full border border-[#1f2c2a]/12 bg-[#f7f1e8]/85 rounded-xl px-4 py-3.5 text-[#1d2f2c] placeholder:text-[#1d2f2c]/55 focus:outline-none focus:border-[#c6a56a]/85 focus:ring-4 focus:ring-[#c6a56a]/18 transition-colors"
+              />
             </label>
 
+            <button
+              type="submit"
+              disabled={status === 'sending'}
+              className="appearance-none border-none bg-linear-to-br from-[#c6a56a] to-[#a3763a] text-white font-bold tracking-wide py-4 px-6 rounded-xl cursor-pointer transition-transform hover:-translate-y-0.5 shadow-[0_10px_25px_rgba(163,118,58,0.3)] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+            >
+              {status === 'sending' ? 'Enviando...' : 'Send Message'}
+            </button>
 
-            <button type="submit">Send Message</button>
+            {status === 'sent' && (
+              <p className="text-sm -mt-2 text-green-700">¡Mensaje enviado! Te contactaremos pronto.</p>
+            )}
+            {status === 'error' && (
+              <p className="text-sm -mt-2 text-red-700">Hubo un error. Intenta de nuevo.</p>
+            )}
           </form>
         </div>
 
-        <aside className="info-card">
-          <h3>Information</h3>
-          <div className="info-item">
-            <span className="label">Email</span>
-            <a href="mailto:hello@cuervosobrino.com">cuervoysobrino@gmail.com</a>
+        <aside className="bg-linear-to-b from-[#3a1414] to-[#4f1c1c] border border-[#1f2c2a]/8 rounded-3xl shadow-[0_20px_50px_rgba(19,31,28,0.08)] backdrop-blur-sm p-8 px-6 text-[#f7f1e8]">
+          <h3 className="mb-6 text-[#f7f1e8]">Information</h3>
+
+          <div className="pt-4 mt-4 border-t border-[#f7f1e8]/[0.14]">
+            <span className="block text-[#d8bf8f] text-xs tracking-[0.12rem] uppercase mb-1.5">Email</span>
+            <a href="mailto:cuervoysobrino@gmail.com" className="text-[#f7f1e8] no-underline leading-relaxed">
+              cuervoysobrino@gmail.com
+            </a>
           </div>
-          <div className="info-item">
-            <span className="label">Phone</span>
-            <a href="tel:+1234567890">+1 (786) 663-4226</a>
+
+          <div className="pt-4 mt-4 border-t border-[#f7f1e8]/[0.14]">
+            <span className="block text-[#d8bf8f] text-xs tracking-[0.12rem] uppercase mb-1.5">Phone</span>
+            <a href="tel:+17866634226" className="text-[#f7f1e8] no-underline leading-relaxed">
+              +1 (786) 663-4226
+            </a>
           </div>
-          <div className="info-item">
-            <span className="label">Hours</span>
-            <p>Martes–Sábado · 11:00am–6:30pm</p>
+
+          <div className="pt-4 mt-4 border-t border-[#f7f1e8]/[0.14]">
+            <span className="block text-[#d8bf8f] text-xs tracking-[0.12rem] uppercase mb-1.5">Hours</span>
+            <p className="text-[#f7f1e8] leading-relaxed m-0">Martes–Sábado · 11:00am–6:30pm</p>
           </div>
         </aside>
       </section>
 
       <Footer />
-
-      <style jsx>{`
-        :global(body) {
-          margin: 0;
-          background: #f5efe7;
-          color: #1f2c2a;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-
-        .contact-page {
-          min-height: 100vh;
-          background:
-            radial-gradient(circle at top, rgba(198, 165, 106, 0.2), transparent 30%),
-            linear-gradient(180deg, #f8f3ed 0%, #f1e7dc 100%);
-        }
-
-        .header-shell {
-          position: sticky;
-          top: 0;
-          z-index: 20;
-          background: rgba(19, 31, 28, 0.9);
-          backdrop-filter: blur(12px);
-          border-bottom: 1px solid rgba(198, 165, 106, 0.35);
-          box-shadow: 0 8px 30px rgba(19, 31, 28, 0.1);
-        }
-
-        .contact-hero {
-          padding: 5rem 1.5rem 2rem;
-          background: linear-gradient(135deg, #0f1f1d 0%, #233d38 100%);
-          color: #f7f1e8;
-        }
-
-        .hero-content {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 3rem 0 1.5rem;
-        }
-
-        .eyebrow {
-          display: inline-block;
-          font-size: 0.8rem;
-          letter-spacing: 0.18rem;
-          text-transform: uppercase;
-          color: #d8bf8f;
-          margin-bottom: 1rem;
-        }
-
-        h1 {
-          margin: 0;
-          font-size: clamp(2.5rem, 5vw, 4.6rem);
-          line-height: 1.05;
-          letter-spacing: -0.04em;
-          max-width: 780px;
-        }
-
-        .subtitle {
-          max-width: 700px;
-          margin-top: 1.2rem;
-          color: rgba(247, 241, 232, 0.8);
-          font-size: 1.1rem;
-          line-height: 1.7;
-        }
-
-        .contact-section {
-          max-width: 1200px;
-          margin: -2.5rem auto 4rem;
-          padding: 0 1.5rem;
-          display: grid;
-          grid-template-columns: 1.5fr 0.8fr;
-          gap: 2rem;
-          align-items: start;
-        }
-
-        .form-card,
-        .info-card {
-          background: rgba(255, 255, 255, 0.76);
-          border: 1px solid rgba(31, 44, 42, 0.08);
-          border-radius: 24px;
-          box-shadow: 0 20px 50px rgba(19, 31, 28, 0.08);
-          backdrop-filter: blur(6px);
-        }
-
-        .form-card {
-          padding: 2rem;
-        }
-
-        h2,
-        h3 {
-          margin: 0 0 1.5rem;
-          color: #1d2f2c;
-        }
-
-        .contact-form {
-          display: flex;
-          flex-direction: column;
-          gap: 1.25rem;
-        }
-
-        .field-row {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 1rem;
-        }
-
-        label {
-          display: flex;
-          flex-direction: column;
-          gap: 0.6rem;
-          font-size: 0.95rem;
-          font-weight: 600;
-          color: #233d38;
-        }
-
-        input,
-        textarea {
-          width: 100%;
-          border: 1px solid rgba(31, 44, 42, 0.12);
-          background: rgba(247, 241, 232, 0.85);
-          border-radius: 12px;
-          padding: 0.9rem 1rem;
-          font: inherit;
-          color: #1d2f2c;
-          transition: border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-          color: rgba(29, 47, 44, 0.55);
-        }
-
-        input:focus,
-        textarea:focus {
-          outline: none;
-          border-color: rgba(198, 165, 106, 0.85);
-          box-shadow: 0 0 0 4px rgba(198, 165, 106, 0.18);
-        }
-
-        textarea {
-          resize: vertical;
-          min-height: 150px;
-        }
-
-        button {
-          appearance: none;
-          border: none;
-          background: linear-gradient(135deg, #c6a56a 0%, #b88d45 100%);
-          color: #fff;
-          font-weight: 700;
-          letter-spacing: 0.04em;
-          padding: 1rem 1.4rem;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
-          box-shadow: 0 10px 25px rgba(184, 141, 69, 0.3);
-        }
-
-        button:hover {
-          transform: translateY(-1px);
-        }
-
-        .info-card {
-          padding: 2rem 1.5rem;
-          background: linear-gradient(180deg, #12322f 0%, #1c413e 100%);
-          color: #f7f1e8;
-        }
-
-        .info-card h3 {
-          color: #f7f1e8;
-        }
-
-        .info-item {
-          padding-top: 1.1rem;
-          border-top: 1px solid rgba(247, 241, 232, 0.14);
-          margin-top: 1.1rem;
-        }
-
-        .label {
-          display: block;
-          color: #d8bf8f;
-          font-size: 0.74rem;
-          letter-spacing: 0.12rem;
-          text-transform: uppercase;
-          margin-bottom: 0.4rem;
-        }
-
-        .info-item a,
-        .info-item p {
-          margin: 0;
-          color: #f7f1e8;
-          text-decoration: none;
-          line-height: 1.7;
-        }
-
-        @media (max-width: 820px) {
-          .contact-section {
-            grid-template-columns: 1fr;
-          }
-
-          .field-row {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
     </main>
   );
 }
-

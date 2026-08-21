@@ -103,11 +103,12 @@ export const collections: Collection[] = [
     backBanner: '/images/home/slice-guaya.jpg',
     watches: [
       {
-        name: 'Guayabera (coming soon)',
+        name: 'Guayabera 01',
         price: '3.810,00',
         description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
         images: [
-          '/fashion/guaya/fashion01-600x600.jpg'
+          '/fashion/guaya/fashion01-600x600.jpg',
+          '/fashion/guaya/fashion01b-600x600.jpg'
         ],
         features: [
           { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },
@@ -121,11 +122,12 @@ export const collections: Collection[] = [
         curiosity: "¿Sabías que el nombre Gran Reserva refleja las excepcionales capacidades técnicas de este modelo—concretamente, su reserva de energía de 68 horas? Impulsado por el mecanismo automático La Joux-Perret G100, este reloj garantiza una autonomía impresionante, manteniendo una hora fiable incluso cuando no se lleva casi tres días sin usarlo. Con una esfera lacada guilloché y rayo sol en tonos ricos como rojo, azul, verde o antracita, combina hábilmente la precisión suiza con el espíritu latino.",
       },
       {
-        name: 'Guayabera (coming soon) ',
+        name: 'Guayabera 02',
         price: '3.810,00',
         description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
         images: [
-          '/fashion/guaya/fashion01-600x600.jpg'
+          '/fashion/guaya/fashion02-600x600.jpg',
+          '/fashion/guaya/fashion02b-600x600.jpg'
         ],
         features: [
           { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },
@@ -139,11 +141,80 @@ export const collections: Collection[] = [
         curiosity: "¿Sabías que el nombre Gran Reserva refleja las excepcionales capacidades técnicas de este modelo—concretamente, su reserva de energía de 68 horas? Impulsado por el mecanismo automático La Joux-Perret G100, este reloj garantiza una autonomía impresionante, manteniendo una hora fiable incluso cuando no se lleva casi tres días sin usarlo. Con una esfera lacada guilloché y rayo sol en tonos ricos como rojo, azul, verde o antracita, combina hábilmente la precisión suiza con el espíritu latino.",
       },
       {
-        name: 'Guayabera (coming soon)  ',
+        name: 'Guayabera 03',
         price: '3.810,00',
         description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
         images: [
-          '/fashion/guaya/fashion01-600x600.jpg'
+          '/fashion/guaya/fashion03-600x600.jpg',
+          '/fashion/guaya/fashion03b-600x600.jpg'
+        ],
+        features: [
+          { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 10,85 mm, cristal de zafiro doble curvado con recubrimiento antirreflejante, resistente al agua hasta 5 ATM, fondo de caja transparente atornillado con cristal zafiro' },
+          { label: 'Dial', value: 'Guillochè antracita ahumada Sunray Dial laquerada. La fecha presenta números blancos en un disco negro. Un emblema CyS aplicado se posiciona a las 12 en punto' },
+          { label: 'Manos', value: 'Manecillas de horas y minutos de losangé. Segunda mano central con punta roja' },
+          { label: 'Correa', value: 'Pulsera de ternera antracita o acero inoxidable' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211-2020' },
+        ],
+        curiosity: "¿Sabías que el nombre Gran Reserva refleja las excepcionales capacidades técnicas de este modelo—concretamente, su reserva de energía de 68 horas? Impulsado por el mecanismo automático La Joux-Perret G100, este reloj garantiza una autonomía impresionante, manteniendo una hora fiable incluso cuando no se lleva casi tres días sin usarlo. Con una esfera lacada guilloché y rayo sol en tonos ricos como rojo, azul, verde o antracita, combina hábilmente la precisión suiza con el espíritu latino.",
+      },{
+        name: 'Guayabera 04',
+        price: '3.810,00',
+        description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
+        images: [
+          '/fashion/guaya/guayabera-Blue01.jpg'
+        ],
+        features: [
+          { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 10,85 mm, cristal de zafiro doble curvado con recubrimiento antirreflejante, resistente al agua hasta 5 ATM, fondo de caja transparente atornillado con cristal zafiro' },
+          { label: 'Dial', value: 'Guillochè antracita ahumada Sunray Dial laquerada. La fecha presenta números blancos en un disco negro. Un emblema CyS aplicado se posiciona a las 12 en punto' },
+          { label: 'Manos', value: 'Manecillas de horas y minutos de losangé. Segunda mano central con punta roja' },
+          { label: 'Correa', value: 'Pulsera de ternera antracita o acero inoxidable' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211-2020' },
+        ],
+        curiosity: "¿Sabías que el nombre Gran Reserva refleja las excepcionales capacidades técnicas de este modelo—concretamente, su reserva de energía de 68 horas? Impulsado por el mecanismo automático La Joux-Perret G100, este reloj garantiza una autonomía impresionante, manteniendo una hora fiable incluso cuando no se lleva casi tres días sin usarlo. Con una esfera lacada guilloché y rayo sol en tonos ricos como rojo, azul, verde o antracita, combina hábilmente la precisión suiza con el espíritu latino.",
+      },{
+        name: 'Guayabera 05',
+        price: '3.810,00',
+        description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
+        images: [
+          '/fashion/guaya/guayabera-Flowers01.jpg'
+        ],
+        features: [
+          { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 10,85 mm, cristal de zafiro doble curvado con recubrimiento antirreflejante, resistente al agua hasta 5 ATM, fondo de caja transparente atornillado con cristal zafiro' },
+          { label: 'Dial', value: 'Guillochè antracita ahumada Sunray Dial laquerada. La fecha presenta números blancos en un disco negro. Un emblema CyS aplicado se posiciona a las 12 en punto' },
+          { label: 'Manos', value: 'Manecillas de horas y minutos de losangé. Segunda mano central con punta roja' },
+          { label: 'Correa', value: 'Pulsera de ternera antracita o acero inoxidable' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211-2020' },
+        ],
+        curiosity: "¿Sabías que el nombre Gran Reserva refleja las excepcionales capacidades técnicas de este modelo—concretamente, su reserva de energía de 68 horas? Impulsado por el mecanismo automático La Joux-Perret G100, este reloj garantiza una autonomía impresionante, manteniendo una hora fiable incluso cuando no se lleva casi tres días sin usarlo. Con una esfera lacada guilloché y rayo sol en tonos ricos como rojo, azul, verde o antracita, combina hábilmente la precisión suiza con el espíritu latino.",
+      },{
+        name: 'Guayabera 06',
+        price: '3.810,00',
+        description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
+        images: [
+          '/fashion/guaya/guayabera-White-Black01.jpg'
+        ],
+        features: [
+          { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 10,85 mm, cristal de zafiro doble curvado con recubrimiento antirreflejante, resistente al agua hasta 5 ATM, fondo de caja transparente atornillado con cristal zafiro' },
+          { label: 'Dial', value: 'Guillochè antracita ahumada Sunray Dial laquerada. La fecha presenta números blancos en un disco negro. Un emblema CyS aplicado se posiciona a las 12 en punto' },
+          { label: 'Manos', value: 'Manecillas de horas y minutos de losangé. Segunda mano central con punta roja' },
+          { label: 'Correa', value: 'Pulsera de ternera antracita o acero inoxidable' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Embalaje', value: 'Caja pequeña de humidor – PE211-2020' },
+        ],
+        curiosity: "¿Sabías que el nombre Gran Reserva refleja las excepcionales capacidades técnicas de este modelo—concretamente, su reserva de energía de 68 horas? Impulsado por el mecanismo automático La Joux-Perret G100, este reloj garantiza una autonomía impresionante, manteniendo una hora fiable incluso cuando no se lleva casi tres días sin usarlo. Con una esfera lacada guilloché y rayo sol en tonos ricos como rojo, azul, verde o antracita, combina hábilmente la precisión suiza con el espíritu latino.",
+      },{
+        name: 'Guayabera 07',
+        price: '3.810,00',
+        description: "Cuervo y Sobrinos presenta con orgullo su última creación, la colección Historiador Gran Reserva, una vibrante celebración de la doble herencia de la marca, que combina la maestría en la relojería suiza con un inconfundible carácter latino. Reserva de energía 68 horas.",
+        images: [
+          '/fashion/guaya/guayabera-white01.jpg'
         ],
         features: [
           { label: 'Movimientos', value: 'La Joux-Perret G100, 11 1/2», automática, diámetro: 25,6 mm, altura: 4,45 mm, Reserva de marcha: 68 horas, 24 nabas, 28800 A/h, peso oscilante terminado con el emblema CyS aplicado' },

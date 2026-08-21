@@ -160,11 +160,11 @@ export const collections: Collection[] = [
     backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
-        name: 'Temporary Earrings',
+        name: 'Earring 01',
         price: '4.080,00',
         description: "Cuervo y Sobrinos rinde homenaje a su cliente de toda la vida y fiel Ernest Hemingway, célebre escritor y auténtica leyenda del siglo XX, con el lanzamiento de una nueva colección dedicada íntegramente al escritor.",
         images: [
-          '/jewelry/jewels/bracelets/brace03-600x600.jpg'
+          '/jewelry/jewels/earrings/Earrings01-600x600.jpg'
         ],
         features: [
           { label: 'Funciones', value: 'Horas, minutos, fecha de puntero con corrector rápido' },
@@ -179,11 +179,11 @@ export const collections: Collection[] = [
         ],
         curiosity: "¿Sabías que el Hemingway Icónico es una edición limitada de solo 882 piezas? Impulsado por el motor automático Sellita SW221-1, ofrece una reserva de marcha de 38 horas. El modelo presenta una fecha con puntero con una punta azul o roja, y la manecilla de los segundos termina en una cola de pez de marlín, rindiendo homenaje al amor de Hemingway por la pesca. Dentro de la corona encontrarás la cita: «Para escribir sobre la vida, primero debes vivirla», grabada tanto en inglés como en español.",
       },{
-        name: 'Temporary Earrings  ',
+        name: 'Necklace 02',
         price: '4.080,00',
         description: "Cuervo y Sobrinos rinde homenaje a su cliente de toda la vida y fiel Ernest Hemingway, célebre escritor y auténtica leyenda del siglo XX, con el lanzamiento de una nueva colección dedicada íntegramente al escritor.",
         images: [
-          '/jewelry/jewels/bracelets/brace03-600x600.jpg'
+          '/jewelry/jewels/earrings/Earrings02-600x600.jpg'
         ],
         features: [
           { label: 'Funciones', value: 'Horas, minutos, fecha de puntero con corrector rápido' },
@@ -198,11 +198,68 @@ export const collections: Collection[] = [
         ],
         curiosity: "¿Sabías que el Hemingway Icónico es una edición limitada de solo 882 piezas? Impulsado por el motor automático Sellita SW221-1, ofrece una reserva de marcha de 38 horas. El modelo presenta una fecha con puntero con una punta azul o roja, y la manecilla de los segundos termina en una cola de pez de marlín, rindiendo homenaje al amor de Hemingway por la pesca. Dentro de la corona encontrarás la cita: «Para escribir sobre la vida, primero debes vivirla», grabada tanto en inglés como en español.",
       },{
-        name: 'Temporary Earrings   ',
+        name: 'Necklace 03',
         price: '4.080,00',
         description: "Cuervo y Sobrinos rinde homenaje a su cliente de toda la vida y fiel Ernest Hemingway, célebre escritor y auténtica leyenda del siglo XX, con el lanzamiento de una nueva colección dedicada íntegramente al escritor.",
         images: [
-          '/jewelry/jewels/bracelets/brace03-600x600.jpg'
+          '/jewelry/jewels/earrings/Earrings03-600x600.jpg'
+        ],
+        features: [
+          { label: 'Funciones', value: 'Horas, minutos, fecha de puntero con corrector rápido' },
+          { label: 'Movimientos', value: 'Sellita 221-1, 11 1/2», automática, diámetro: 26 mm, altura: 5,05 mm, Reserva de marcha: 38 horas, 26 rubios, 28800 A/h, peso oscilante terminado con grabado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 12,05 mm, cristal de zafiro doble curvado con recubrimiento antirreflectante, resistente al agua hasta 10 ATM, corona atornillada. Logotipo grabado de Hemingway en la parte trasera de la caja y placa de edición limitada en la caja lateral' },
+          { label: 'Dial', value: 'Esfera crema, recubrimiento de índices Super-LumiNova® y emblema CyS aplicado' },
+          { label: 'Manos', value: 'Manecillas plateadas de las horas y los minutos con Super-Luminova®, manecilla de segundos de acero azul y puntero plateado con forma de cola de pez' },
+          { label: 'Correa', value: 'Correa de cuero marrón claro' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Edicion', value: 'Limitada882 piezas' },
+          { label: 'Embalaje', value: 'PE 107 – Caja de libros Hemingway' },
+        ],
+        curiosity: "¿Sabías que el Hemingway Icónico es una edición limitada de solo 882 piezas? Impulsado por el motor automático Sellita SW221-1, ofrece una reserva de marcha de 38 horas. El modelo presenta una fecha con puntero con una punta azul o roja, y la manecilla de los segundos termina en una cola de pez de marlín, rindiendo homenaje al amor de Hemingway por la pesca. Dentro de la corona encontrarás la cita: «Para escribir sobre la vida, primero debes vivirla», grabada tanto en inglés como en español.",
+      },{
+        name: 'Necklace 04',
+        price: '4.080,00',
+        description: "Cuervo y Sobrinos rinde homenaje a su cliente de toda la vida y fiel Ernest Hemingway, célebre escritor y auténtica leyenda del siglo XX, con el lanzamiento de una nueva colección dedicada íntegramente al escritor.",
+        images: [
+          '/jewelry/jewels/earrings/Earrings04-600x600.jpg'
+        ],
+        features: [
+          { label: 'Funciones', value: 'Horas, minutos, fecha de puntero con corrector rápido' },
+          { label: 'Movimientos', value: 'Sellita 221-1, 11 1/2», automática, diámetro: 26 mm, altura: 5,05 mm, Reserva de marcha: 38 horas, 26 rubios, 28800 A/h, peso oscilante terminado con grabado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 12,05 mm, cristal de zafiro doble curvado con recubrimiento antirreflectante, resistente al agua hasta 10 ATM, corona atornillada. Logotipo grabado de Hemingway en la parte trasera de la caja y placa de edición limitada en la caja lateral' },
+          { label: 'Dial', value: 'Esfera crema, recubrimiento de índices Super-LumiNova® y emblema CyS aplicado' },
+          { label: 'Manos', value: 'Manecillas plateadas de las horas y los minutos con Super-Luminova®, manecilla de segundos de acero azul y puntero plateado con forma de cola de pez' },
+          { label: 'Correa', value: 'Correa de cuero marrón claro' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Edicion', value: 'Limitada882 piezas' },
+          { label: 'Embalaje', value: 'PE 107 – Caja de libros Hemingway' },
+        ],
+        curiosity: "¿Sabías que el Hemingway Icónico es una edición limitada de solo 882 piezas? Impulsado por el motor automático Sellita SW221-1, ofrece una reserva de marcha de 38 horas. El modelo presenta una fecha con puntero con una punta azul o roja, y la manecilla de los segundos termina en una cola de pez de marlín, rindiendo homenaje al amor de Hemingway por la pesca. Dentro de la corona encontrarás la cita: «Para escribir sobre la vida, primero debes vivirla», grabada tanto en inglés como en español.",
+      },{
+        name: 'Necklace 05',
+        price: '4.080,00',
+        description: "Cuervo y Sobrinos rinde homenaje a su cliente de toda la vida y fiel Ernest Hemingway, célebre escritor y auténtica leyenda del siglo XX, con el lanzamiento de una nueva colección dedicada íntegramente al escritor.",
+        images: [
+          '/jewelry/jewels/earrings/Earrings05-600x600.jpg'
+        ],
+        features: [
+          { label: 'Funciones', value: 'Horas, minutos, fecha de puntero con corrector rápido' },
+          { label: 'Movimientos', value: 'Sellita 221-1, 11 1/2», automática, diámetro: 26 mm, altura: 5,05 mm, Reserva de marcha: 38 horas, 26 rubios, 28800 A/h, peso oscilante terminado con grabado' },
+          { label: 'Caso', value: 'Acero inoxidable, diámetro 40 mm, altura 12,05 mm, cristal de zafiro doble curvado con recubrimiento antirreflectante, resistente al agua hasta 10 ATM, corona atornillada. Logotipo grabado de Hemingway en la parte trasera de la caja y placa de edición limitada en la caja lateral' },
+          { label: 'Dial', value: 'Esfera crema, recubrimiento de índices Super-LumiNova® y emblema CyS aplicado' },
+          { label: 'Manos', value: 'Manecillas plateadas de las horas y los minutos con Super-Luminova®, manecilla de segundos de acero azul y puntero plateado con forma de cola de pez' },
+          { label: 'Correa', value: 'Correa de cuero marrón claro' },
+          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
+          { label: 'Edicion', value: 'Limitada882 piezas' },
+          { label: 'Embalaje', value: 'PE 107 – Caja de libros Hemingway' },
+        ],
+        curiosity: "¿Sabías que el Hemingway Icónico es una edición limitada de solo 882 piezas? Impulsado por el motor automático Sellita SW221-1, ofrece una reserva de marcha de 38 horas. El modelo presenta una fecha con puntero con una punta azul o roja, y la manecilla de los segundos termina en una cola de pez de marlín, rindiendo homenaje al amor de Hemingway por la pesca. Dentro de la corona encontrarás la cita: «Para escribir sobre la vida, primero debes vivirla», grabada tanto en inglés como en español.",
+      },{
+        name: 'Necklace 06',
+        price: '4.080,00',
+        description: "Cuervo y Sobrinos rinde homenaje a su cliente de toda la vida y fiel Ernest Hemingway, célebre escritor y auténtica leyenda del siglo XX, con el lanzamiento de una nueva colección dedicada íntegramente al escritor.",
+        images: [
+          '/jewelry/jewels/earrings/Earrings06-600x600.jpg'
         ],
         features: [
           { label: 'Funciones', value: 'Horas, minutos, fecha de puntero con corrector rápido' },
@@ -355,11 +412,11 @@ export const collections: Collection[] = [
     backBanner: '/jewelry/sliceUp-Fashion.jpg',
     watches: [
       {
-        name: 'Temporary Jewelry',
+        name: 'Men Jewelry',
         price: '6.550,00',
         description: "Dotado de dos pantallas, impulsadas por dos movimientos independientes, The Prominente Icónico Doble Tiempo puede proyectarse en dos momentos diferentes simultáneamente, independientemente de la diferencia horaria entre ambas ubicaciones.",
         images: [
-          '/jewelry/jewels/rings/brace01-600x600.jpg',
+          '/jewelry/jewels/mens-jewelry/Men-Jewel01-600x600.jpg'
         ],
         features: [
           { label: 'Funciones', value: 'Horas y minutos y segunda zona horaria con indicación de 24 horas' },
@@ -374,11 +431,11 @@ export const collections: Collection[] = [
         ],
         curiosity: "¿Sabías que el Prominente Icónico Doble Tiempo te permite seguir dos husos horarios a la vez, gracias a sus dos movimientos automáticos dentro de una audaz caja rectangular Art Decó? Con coronas separadas y esferas guilloché, números arábigos estampados y agujas al estilo Breguet con Super-LumiNova®, es un homenaje elegante a la época dorada de La Habana, perfecta para viajeros que viven entre mundos.",
       },{
-        name: 'Temporary Jewelry ',
+        name: 'Men Jewelry 02',
         price: '6.550,00',
         description: "Dotado de dos pantallas, impulsadas por dos movimientos independientes, The Prominente Icónico Doble Tiempo puede proyectarse en dos momentos diferentes simultáneamente, independientemente de la diferencia horaria entre ambas ubicaciones.",
         images: [
-          '/jewelry/jewels/rings/brace01-600x600.jpg',
+          '/jewelry/jewels/mens-jewelry/Men-Jewel02-600x600.jpg'
         ],
         features: [
           { label: 'Funciones', value: 'Horas y minutos y segunda zona horaria con indicación de 24 horas' },
@@ -392,26 +449,7 @@ export const collections: Collection[] = [
           { label: 'Embalaje', value: 'Caja de humidor estándar – PE 100' },
         ],
         curiosity: "¿Sabías que el Prominente Icónico Doble Tiempo te permite seguir dos husos horarios a la vez, gracias a sus dos movimientos automáticos dentro de una audaz caja rectangular Art Decó? Con coronas separadas y esferas guilloché, números arábigos estampados y agujas al estilo Breguet con Super-LumiNova®, es un homenaje elegante a la época dorada de La Habana, perfecta para viajeros que viven entre mundos.",
-      },{
-        name: 'Temporary Jewelry  ',
-        price: '6.550,00',
-        description: "Dotado de dos pantallas, impulsadas por dos movimientos independientes, The Prominente Icónico Doble Tiempo puede proyectarse en dos momentos diferentes simultáneamente, independientemente de la diferencia horaria entre ambas ubicaciones.",
-        images: [
-          '/jewelry/jewels/rings/brace01-600x600.jpg',
-        ],
-        features: [
-          { label: 'Funciones', value: 'Horas y minutos y segunda zona horaria con indicación de 24 horas' },
-          { label: 'Movimientos', value: 'ETA 2671, 11 1/2», automática, diámetro: 17,20 mm, altura: 4,80 mm, 44 horas, 25 rubios, 28800 A/h, peso oscilante terminado con grabado' },
-          { label: 'Caso', value: 'Acero inoxidable, 30,5 x 52 mm, altura 9,5 mm, cristal de zafiro curvado con recubrimiento antirreflejante, resistente al agua hasta 3 ATM, doble caja trasera abierta' },
-          { label: 'Dial', value: 'Esfera plateada «guilloché», índices árabes superiores en relieve y índices árabes inferiores impresos, emblema CyS aplicado' },
-          { label: 'Manos', value: 'Breguet de color azul con horas y minutos con Super-LumiNova®' },
-          { label: 'Correa', value: 'Pulsera azul de alto brillo de caimán de Luisiana o acero inoxidable' },
-          { label: 'Hebilla', value: 'Hebilla plegable de acero inoxidable grabada con el emblema CyS' },
-            
-          { label: 'Embalaje', value: 'Caja de humidor estándar – PE 100' },
-        ],
-        curiosity: "¿Sabías que el Prominente Icónico Doble Tiempo te permite seguir dos husos horarios a la vez, gracias a sus dos movimientos automáticos dentro de una audaz caja rectangular Art Decó? Con coronas separadas y esferas guilloché, números arábigos estampados y agujas al estilo Breguet con Super-LumiNova®, es un homenaje elegante a la época dorada de La Habana, perfecta para viajeros que viven entre mundos.",
-      }
+      },
     ],
   },
   {
